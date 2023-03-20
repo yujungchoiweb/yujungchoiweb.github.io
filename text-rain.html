@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Rain with Input</title>
+    <link rel="stylesheet" type="text/css" href="text-rain.css">
+
+</head>
+<body>
+
+    <div id="image-link">
+        <a href="index.html">
+          <img src="home.png" alt="Link Image" width="40px" height="40px">
+        </a>
+      </div>
+
+
+    <input id="textInput" type="text" placeholder="여기에 입력하세요" />
+    <button id="addTextButton">글 낙하</button>
+
+
+    <label for="colorScroll">글자색:</label>
+<input type="range" id="colorScroll" min="0" max="360" step="1">
+
+    <label for="colorRange">배경색:</label>
+    <input type="range" min="0" max="360" value="0" id="colorRange">
+
+    <button id="centerTextButton">퇴적암 만들기</button>
+
+    <div id="gif-container"></div>
+
+    <button id="image-button" onclick="location.reload()"></button>
+
+
+    <canvas id="canvas"></canvas>
+    
+    <script src="text-rain.js"></script>
+
+</body>
+</html>

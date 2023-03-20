@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    position: relative;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape {
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #f0f0f0;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+
+#textInput {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    margin-right: 0px;
+}
+
+#addTextButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#addTextButton:hover {
+    background-color: #ddd;
+}
+
+#centerTextButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#centerTextButton:hover {
+    background-color: #ddd;
+}
+
+  #image-button {
+    position: fixed; /* 버튼을 고정 위치에 배치합니다. */
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url("refresh.png");
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent; /* 배경색 제거 */
+    box-shadow: none; /* 그림자 효과 제거 */
+}
+
+#gif-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

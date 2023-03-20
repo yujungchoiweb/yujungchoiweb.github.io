@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>이미지 위에 중앙에 링크가 달린 이미지</title>
+    <style>
+      .container {
+        position: relative;
+        display: inline-block;
+      }
+      .container img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+      .overlay {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .overlay img {
+        display: block;
+        width: 308px;
+        height: 124px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="index.gif" alt="이미지">
+      <div class="overlay">
+        <a href="text-rain.html"><img src="start.png" alt="링크 이미지"></a>
+      </div>
+    </div>
+  </body>
+</html>
